@@ -54,6 +54,13 @@ endmodule
 
 Full Adder
 
+module fulladder(A,B,C,Sum,Carry);
+input A,B,C;
+output Sum,Carry;
+assign Sum = ((A^B)^C);
+assign Carry = ((A&B)|(B&C)|(C&A));
+endmodule
+
 ```
 
 ### Output:
@@ -63,15 +70,32 @@ RTL Realization for Half Adder
 
 ![halfadderrtl](https://user-images.githubusercontent.com/117991122/210625521-9a98f79d-bb30-41a1-8653-079f9b683941.png)
 
+RTL Realization for Full Adder
+
+![fulladderrtl](https://user-images.githubusercontent.com/117991122/210628659-d57a3d8a-a38f-4d3e-be9f-16c17943e678.png)
+
 
 ### TIMING DIAGRAM
 
 Timing Diagram for Half Adder
+
 ![halfaddertimimgdiagram](https://user-images.githubusercontent.com/117991122/210625418-202ee9bf-82b6-4bff-b44c-7d3472823b77.jpg)
+
+Timing Diagram for Full Adder
+
+![fulladdertimimgdiagram](https://user-images.githubusercontent.com/117991122/210628718-a3fadcc6-7e9d-4760-94b0-86e446ad00df.png)
+
 
 ### TRUTH TABLE 
 
 Truth Table for Half Adder
+
+![truthtableha](https://user-images.githubusercontent.com/117991122/210627417-ddcddf40-ed45-43e5-93e6-c4a65f56e2f2.jpg)
+
+Truth Table for Full Adder
+
+![fulladdertruthtable](https://user-images.githubusercontent.com/117991122/210629188-b8fc03c6-57dd-4e76-8db7-109dc7f5980c.jpg)
+
 
 ### Result:
 
